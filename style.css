@@ -8,6 +8,10 @@ COLORS:
 */
 
 
+html{
+    scroll-behavior: smooth;
+}
+
 /*About*/
 
 
@@ -19,6 +23,9 @@ COLORS:
 .navbar{
     background-color: rgb(43, 43, 43);
     overflow: hidden; 
+    top: 0; 
+    width: 100%;
+    position: fixed;
 }
 
 .navbar a{
@@ -35,18 +42,25 @@ COLORS:
 
 /*HOME*/
 
-.home{
-    height: 300px; 
-    width: fit-content;
-    margin: 100px 200px 100px 200px; 
-    height: 100%;
-}
-
-.home h2{
+h2{
     color: whitesmoke;
     font-size: 40px;
     font-weight: bold;
 }
+
+h3{
+    font-size: 25px;
+}
+
+.home{
+    justify-content: center;
+    height: 300px; 
+    width: fit-content;
+    margin: 25% 200px 25% 200px; 
+    height: 100vh;
+}
+
+
 
 .home_container{
     display: flex;
@@ -62,13 +76,11 @@ COLORS:
 }
 
 .home_text h2{
-    margin: 20px 0px 0px 0px; 
     font-size: 35px;
 }
 
 .home_text h3{
     margin: 0; 
-    font-size: 25px;
 }
 
 .home_text p{
@@ -86,36 +98,72 @@ COLORS:
 /*ABOUT*/
 .about{
     color: whitesmoke; 
+    /*margin: 0px 100px 0px 100px; */
+    margin: 0 200px 0 200px; 
+    height: 100vh;
 }
 
-.about_structure{
-    display: flex; 
-    flex-direction: row;
-    width: fit-content;
-    flex-wrap: wrap; 
-    margin: 100px 100px 100px 100px; 
-    gap: 2rem; 
+.label_box_container{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 50px; 
 }
 
-.badge_box{
-    display: box; 
-    text-align: center;
-    background-color: #50717b;
-    width: 300px;
-    height: 300px; 
-    flex: 1; 
-    padding: 1.5rem;
+.label_box{
+    background-color: #3a4042;
     border-radius: 25px;
+    flex: 1 auto; 
+    text-align: center;
+}
+
+.text_box{
+    background-color: #3a4042;
+    border-radius: 25px;
+    display: block; 
+    margin: 50px 100px 0px 100px; 
+    overflow: hidden;
 }
 
 /*PROJECTS*/
 .projects{
     color: whitesmoke;
+    /*margin: 50px 100px 0px 100px;*/
+    margin: 0px 200px 0px 200px; 
+    height: 100vh; 
+
+}
+
+.pcontainer_holder{
+    margin: 15% 0 15% 0; 
+}
+
+.projects_container{
+    display: flex; 
+    background-color: #3a4042;
+    border-radius: 25px;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+.projects_container video{
+    height: auto; 
+    width: 400px; 
+}
+
+.projects_text h3{
+    margin-top: 0;
+    margin-left: 20px; 
+    
+}
+
+.projects p{
+    margin-left: 20px;
 }
 
 
 /*CONTACT*/
 .contact{
     color: whitesmoke; 
+    margin: 0px 200px 0px 200px; 
+    height: 100vh; 
 }
 
